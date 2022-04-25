@@ -1,3 +1,4 @@
+
 import random
 user_action = input("Сделайте выбор - rock; paper; scissors - ")
 possible_actions = ["rock","paper","scissors"]
@@ -15,4 +16,10 @@ elif user_action == "paper":
     print('Поздравляем! Вы победили!')
     if computer_action == "rock":
         print('Поздравляем! Вы победили!')
-
+    else:
+            print('Вы проиграли :(')
+elif user_action == "scissors":
+    if computer_action == "paper":
+        print('Поздравляем! Вы победили!')
+    else:
+        print('Вы проиграли :(')
